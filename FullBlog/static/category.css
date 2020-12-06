@@ -1,0 +1,185 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.title {
+    text-align: center;
+    margin-top: 50px;
+    color: #160982;
+    font-weight: bolder !important;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+h1::after {
+    content: ""; 
+    position: absolute; 
+    height: 4px; 
+    width: 120px; 
+    background: #160982;
+    top: 55px;
+    transform: translateX(-320px);
+}
+
+
+h1::before {
+    
+    content: ""; 
+    position: absolute; 
+    height: 4px; 
+    width: 120px; 
+    background: #160982;
+    transform: translateX(188px) translateY(55px);
+}
+
+.title i {
+    margin-left: -18px;
+    position: absolute; 
+    top: 50px;
+}
+
+/* styling the cards starts */ 
+
+
+.container .second-section-card .card-text {
+
+    margin-left: -18px
+    
+}
+
+.container .second-section-card {
+    border: none !important; 
+    outline: none !important;
+}
+
+.container .second-section-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    width: 100%;
+    color: #212631 !important;
+}
+
+.container .second-section-card h4:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.container .second-section-card span {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.container .second-section-card span:first-child {
+    padding: 2px 15px; 
+    border-radius: 2px;
+    letter-spacing: 0.09em;
+}
+
+.container .second-section-card span:nth-child(2) {
+
+    color: #000; 
+    text-transform: none;
+    margin-left: 15px;
+    font-size: 13px;
+
+}
+
+.container .second-section-card {
+    margin-bottom: 20px;  
+}
+
+.container .second-section-card img:hover {
+    opacity: 0.8;
+}
+
+/* styling the cards ends */ 
+
+
+/* styling the navbar starts  */ 
+
+
+.navbar-nav .nav-link {
+    color: #000 !important;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.navbar-nav .nav-item {
+    border-right: 0.5px solid rgb(235, 233, 233);
+    border-left: 0.5px solid rgb(235, 233, 233);
+    padding: 15px 5px;
+}
+
+nav .navcont::after {
+
+    content: ''; 
+    background: rgb(235, 233, 233);
+    width: 100px; 
+    position: absolute;
+    height: 1px;
+    width: 99%;
+    left: 5px;
+    bottom: 8px;
+    
+}
+
+.navbar .collapse {
+    margin-top: -5px;
+    margin-right: 120px;
+}
+.navbar-brand span:first-child {
+    font-size: 25px; 
+    font-weight: 500;
+}
+
+.navbar-brand span:nth-child(2) {
+    font-size: 30px;
+    color: rgb(29, 65, 185);
+    font-weight: 600;
+}
+
+.navbar-brand {
+    margin-left: -50px;
+}
+
+
+.navbar-nav .nav-item:nth-child(2) {
+    border-bottom: 6px solid crimson;
+}
+
+.navbar-nav .nav-item:nth-child(3) {
+    border-bottom: 6px solid #2ecc71;
+}
+
+.navbar-nav .nav-item:nth-child(4) {
+    border-bottom: 6px solid #3498db;
+}
+
+.navbar-nav .nav-item:nth-child(5) {
+    border-bottom: 6px solid #f1c40f;
+}
+
+.navbar-nav #link-2:hover {
+    color: crimson !important;
+}
+
+.navbar-nav #link-3:hover {
+    color: #2ecc71 !important;
+}
+
+
+.navbar-nav #link-4:hover {
+    color: #3498db !important;
+}
+
+.navbar-nav #link-5:hover {
+    color: #f1c40f !important;
+}
+
+/* styling the navbar ends */ 

@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+
+/* Styling the image post starts */
+
+#first-container .card-img-overlay {
+
+  position: absolute;
+  top: 65%;
+  color: #fff !important;
+  z-index: 3;
+}
+
+#first-container  .card-img-overlay h2 {
+
+  font-size: 35px !important;
+  font-weight: bolder !important;
+}
+
+#first-container .card-img-overlay h6 span:nth-child(2) {
+  margin-left: 13px;
+  font-size: 15px;
+}
+
+#first-container .card-img-overlay h6 span:first-child {
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+
+#first-container {
+  height: 400px;
+}
+
+#first-container .card img {
+  height: 400px;
+  max-width: 100%;
+}
+/* Styling the image post ends */
+
+
+
+/* Styling the second container starts */
+
+#second-container {
+  margin-top: 70px;
+}
+
+#second-container #post-content {
+
+  margin-left: -50px;
+}
+#second-container  #post-content h1 {
+  font-size: 30px !important;
+  font-weight: 900 !important;
+  width: 80%;
+  color :#042b69;
+}
+
+#second-container #social-media .fa  {
+  
+  margin-top: 25px; 
+  margin-bottom: 25px;
+  position: relative;
+  display: block;
+  font-size: 25px;
+}
+
+
+#second-container #social-media .back-icon {
+  background: #e6e8eb;
+  width: 50px; 
+  height: 50px; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: none; 
+  outline: none;
+  margin-top: 20px; 
+  margin-bottom: 20px;
+}
+
+#second-container #social-media {
+  margin-left: -120px;
+  margin-top: -20px;
+}
+#second-container #social-media a:hover {
+  text-decoration: none;
+}
+
+
+#second-container #ads-mostread .ads {
+
+  background: #e6e8eb; 
+  height: 200px;
+  width: 200px; 
+  color: rgb(6, 22, 77);
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+
+#second-container #ads-mostread {
+  
+  margin-left: 100px;
+}
+
+#second-container #ads-mostread .most-read {
+  margin-top: -15px;
+}
+
+#second-container #ads-mostread  h2 {
+
+  font-size: 28px; 
+  font-weight: 800 !important;
+  margin-top: 35px; 
+  margin-bottom: 15px;
+}
+
+
+#second-container #ads-mostread .card .col-md-4 img {
+  height: 100%;
+  width: 150px;
+  max-width: 100%;
+}
+
+#second-container #ads-mostread .card {
+  border: none !important; 
+  outline: none !important;
+  padding-top: 40px;
+}
+
+#second-container #ads-mostread .card .card-body h5 {
+  color: #051a47;
+  font-size: 19px;
+  font-weight: 600;
+  margin-left: -22px;
+  width: 100%;
+  margin-top: -15px;
+}
+
+#second-container #ads-mostread .card .card-body h5:hover {
+  text-decoration: underline !important;
+}
+
+#second-container #ads-mostread .card .card-body p {
+  margin-left: -22px;
+}
+
+#second-container .categories {
+  width: 350px;
+  margin-top: 65px;
+}
+#second-container .categories ul {
+  list-style: none;
+  margin-top: 35px;
+}
+
+#second-container .categories ul li {
+  display: block;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid #eceef2;
+  font-size: 18px;
+  font-weight: 600;
+  color: #353d53;
+}
+
+#second-container .categories li span {
+  color: #fff;
+  margin-left: 140px;
+  padding: 5px 6px;
+  font-size: 14px;
+  border-radius: 3px;
+  display: inline-block;
+}
+/* Styling the second container ends */
+
+

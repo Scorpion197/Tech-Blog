@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/* styling the header starts */ 
+
+.header {
+    width: 100%; 
+    height: 500px;
+    background-image: linear-gradient(90deg, rgba(131,58,180,0.6) 0%, rgba(253,29,29,0.8) 50%, rgba(252,176,69,0.6) 100%)
+    , url('contact.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header h1 {
+    color: #fff;
+    font-weight: bolder !important;
+    font-size: 55px;
+}
+
+.header p {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.text span {
+    color: #fcb045;
+}
+
+.text {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.text button {
+    text-transform: uppercase;
+    margin-top: 25px;
+    width: 150px; 
+    height: 40px;
+    border: 3px solid #fcb045;
+    background: transparent; 
+    color: white;
+    padding: 2px 4px 2px 4px;
+    font-size: 18px; 
+    font-weight: 400;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.text button:hover {
+    background: #fcb045; 
+    color: #fff;
+}
+
+/* Styling the header ends */ 
+
+
+/* styling the form starts */ 
+
+
+.contact-form {
+    width: 80%; 
+    height: 500px; 
+    margin: auto; 
+    background: rgb(253, 253, 253);
+    margin-top: 50px; 
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 7px 1px 24px 19px #eeeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form h1 {
+    font-weight: bolder;
+    text-align: center;
+    color: rgb(27, 3, 95)
+}
+
+form {
+    display: flex; 
+    flex-direction: column;
+}
+
+form .text-input {
+
+    margin-top: 20px;
+    margin-top: 20px;
+    width: 400px;
+    padding: 10px 5px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #fcb045;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(131,58,180);
+}
+
+form .submit-btn {
+    margin-top: 30px;
+    width: 200px;
+    margin-left: 90px;
+    padding: 5px 2px;
+    border: none; 
+    outline: none; 
+    border-radius: 5px;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(131,58,180,0.6) 0%, rgba(252,176,69,0.6) 100%);
+}
+
+.contact-form i {
+    color: rgb(131,58,180);
+    cursor: pointer;
+}
+/* styling the form ends */
