@@ -47,3 +47,7 @@ EMAIL_USE_TLS = True
 In your gmail account (EMAIL_HOST_USER), go to ``` https://myaccount.google.com/lesssecureapps ```, turn it on
 
 In case you don't know what's it, it allows third party software to send emails using your account
+
+
+# Overview
+Emmm, i will add some screenshots later....
