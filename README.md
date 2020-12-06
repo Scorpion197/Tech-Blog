@@ -48,6 +48,7 @@ In your gmail account (EMAIL_HOST_USER), go to ``` https://myaccount.google.com/
 
 In case you don't know what's it, it allows third party software to send emails using your account
 
+To get the contact section, check ``` http://127.0.0.1:8000/contact.html ```
 
 # Overview
 Emmm, i will add some screenshots later....
