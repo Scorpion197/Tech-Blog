@@ -11,7 +11,7 @@ However, the blog is tested in a local server, feel free to upload it into a pro
 
 # Testing it on a local server 
 
-Clone and download the repository
+Clone and download the repository and rename it (whatever you want)
 
 ### Installing tinymce4 
 
@@ -36,6 +36,19 @@ and
 ``` python manage.py startapp Blog ```
 
 ❗❗ Every file in the FullBlog project should be replaced with the corresponding one in this repo. Same folders and files are missing here because django will create them.
+
+❗️ Replace every file in that project you created with the corresponding one in this repo
+
+finally...
+
+```
+cd FullBlog 
+python3 manage.py makemigrations 
+python3 manage.py migrate 
+
+python3 manage.py runserver 
+```
+
 ### Sending emails to subscribers 
 
 first of all, open the command line and type the following 
