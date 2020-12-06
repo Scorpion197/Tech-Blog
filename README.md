@@ -3,4 +3,27 @@ This is a simple news blog made for learning purposes. The front-end is made usi
 
 However, the blog is tested in a local server, feel free to upload it into a production server after changing some settings of course.
 
+# Features 
+- Usual blog operations (reading, removing, updating an article)
+- Users can subscribe so every new released article will be sent to their gmail 
+- Comments (currently implementing it)
+- Tagging, searching, recommendation systems ( currently implementing it) 
 
+# Testing it on a local server 
+
+Clone and download the repository
+
+### Installing tinymce4 
+
+If you're a windows user open the cmd, and type the following command: 
+
+``` pip3 install django-tinymce4-lite ```
+
+If you're a linux user:
+
+``` 
+sudo apt-get update 
+pip3 install django-tinymce4-lite
+pip3 install django-tinymce4-widget
+```
+    
