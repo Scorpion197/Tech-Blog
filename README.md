@@ -29,19 +29,16 @@ pip3 install django-tinymce4-widget
 ### Creating the project, the application and some necessary settings 
 
 Open the command line and type the following:
-### Sending emails to subscribers 
 
-first of all, open the command line and type the following 
 ``` django-admin startproject FullBlog ```
 and 
 
 ``` python manage.py startapp Blog ```
 
-❗❗ Every file in the your the FullBlog project should be replaced with the corresponding one in this repo. Same folders and files are missing here
+❗❗ Every file in the FullBlog project should be replaced with the corresponding one in this repo. Same folders and files are missing here because django will create them.
+### Sending emails to subscribers 
 
-because django will create them.
-
-
+first of all, open the command line and type the following 
 
 ``` 
 sudo su 
