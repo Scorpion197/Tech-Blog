@@ -26,4 +26,21 @@ sudo apt-get update
 pip3 install django-tinymce4-lite
 pip3 install django-tinymce4-widget
 ```
-    
+
+### Sending emails to subscribers 
+
+first of all, open the command line and type the following 
+
+``` 
+sudo su 
+python3 -m smtpd -c DebuggingServer localhost:1025
+```
+
+Go to ``` settings.py ```, copy and past the following:
+```
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'your email'  
+EMAIL_HOST_PASSWORD = ''        #Make sure to not write it if you're in a production server (use some google APIs)
+EMAIL_USE_TLS = True 
+```
