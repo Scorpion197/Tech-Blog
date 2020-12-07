@@ -7,7 +7,7 @@ However, the blog is tested in a local server, feel free to upload it into a pro
 - Usual blog operations (reading, removing, updating an article)
 - Users can subscribe so every new released article will be sent to their gmail 
 - Comments (currently implementing it)
-- Tagging, searching, recommendation systems ( currently implementing it) 
+- Tagging, searching, recommendation systems ( currently implementing them) 
 
 # Testing it on a local server 
 
