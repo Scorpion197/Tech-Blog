@@ -1,0 +1,140 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel='stylesheet' href="{% static 'bootstrap.min.css' %}">
+    <link href="{% static 'onepost.css' %}" rel='stylesheet' type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,400;0,600;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="{% static 'tinymce/css/prism.css' %}" rel="stylesheet" type="text/css">
+    <title></title>
+
+</head>
+<body>
+
+
+    <div class="container-fluid" id="first-container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card upper-card">
+              <div class='overlay'></div>
+              <img src="{{ post.post_image.url }}" class="card-img" alt="...">
+              <div class="card-img-overlay" id="first">
+                  <h6 class="image-title"> <span class="{{ post.post_category }}"> {{ post.post_category }}</span> <span class="second-span"> {{ post.date }}</span> </h6>
+                  <h2>{{ post.title }}</h2>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- The post content   -->
+    <div class="container" id="second-container">
+      <div class="row">
+        <div class="col-lg-2" id="social-media">
+
+          <div  class="back-icon"><a href="#" id="facebook"><i class="fa fa-facebook"></i></a></div>
+          <div  class="back-icon"><a href="#" id="twitter"><i class="fa fa-twitter" ></i></a></div>
+          <div  class="back-icon"><a href="#" id="pinterest"><i class="fa fa-pinterest" ></i></a></div>
+          <div  class="back-icon"><a href="#" id="google-plus"><i class="fa fa-google-plus" ></i></a></div>
+          <div  class="back-icon"><a href="#" id="linked-in"><i class="fa fa-linkedin"></i></a></div>
+        </div>
+
+        <div class="col-lg-8" id="post-content">
+
+          <h1> {{ post.title }} </h1>
+          <p> {{ post.content|safe }} </p>
+
+          <div class="comments-section">
+
+            <h2>Comments</h2>
+            {% for comment in comments %}
+              <div class="comment-content">
+                <h3>{{ comment.name }}</h3>
+                <span><small> {{ comment.date }} </small></span>
+                <p> {{ comment.body|safe }}</p>
+              </div>
+            {% endfor %} 
+              
+            <div class="add-new-comment">
+              <h2> Leave your comment </h2>
+              <form action="{% url 'view_one_post' post.id %}" method="POST">
+                {% csrf_token %}
+                <input type="text" id="user-name" name="user-name" placeholder="Your name">
+                <input type="email" id="user-email" name="user-email" placeholder="Your email">
+                <textarea type="text" id="comment-body" name="comment-body" placeholder="Write your comment here"></textarea>
+                <input type="submit" value="Send" class="submit-btn">
+              </form>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="col-lg-2" id="ads-mostread">
+
+          <div class="ads">
+            SAMPLE AD
+          </div>
+          <h2> Most Read </h2>
+
+          <div class="most-read">
+
+            {% for article in articles %}
+
+                <div class="card mb-3" style="width: 520px; height:140px;">
+                  <div class="row no-gutters">
+                      <div class="col-md-4">
+                          <img src="{{ article.post_image.url }}" class="card-img" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                          <div class="card-body">
+                              <a href="{% url 'view_one_post' article.id %}"><h5 class="card-title">{{ article.title }}</h5></a>
+                              <p><small> {{ article.date }} </small></p>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+            {% endfor %}
+
+          </div>
+
+          <div class="categories">
+
+              <h3 class="categories title"> Categories </h3>
+              <ul class="categories-links links">
+                <ul>
+                  <a href="{% url 'view_one_category' 'web-dev' %}"><li>Web Development <span class="web-dev"> 23</span> </li></a>
+                  <a href="{% url 'view_one_category' 'game-dev' %}"><li>Game Development <span class="game-dev"> 15</span> </li></a>
+                  <a href="{% url 'view_one_category' 'machine-learning' %}"><li>Machine Learning <span class="machine-learning"> 10</span> </li></a>
+                  <a href="{% url 'view_one_category' 'info-sec' %}"><li>Information Security <span class="info-sec"> 30</span></li></a>
+              
+                </ul>
+
+          </div>
+
+        </div>
+        
+
+      </div>
+
+    </div>
+
+
+    <script src="{% static 'tinymce/js/prism.js' %}"></script>
+    <script
+   src="https://code.jquery.com/jquery-3.5.1.min.js"
+   integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+   crossorigin="anonymous"></script>
+   <script src="{% static 'bootstrap.min.js' %}"></script>
+   <script src="{% static 'onepost.js' %}"></script>
+   
+</body>
+</html>
